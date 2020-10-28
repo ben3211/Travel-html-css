@@ -5,6 +5,8 @@ body {
 }
 
 /**header**/
+
+    /**logo**/
 header {
     display: flex;
 }
@@ -28,7 +30,9 @@ header {
 .logo p {
     margin: 0 0 10px 10px;
 }
+    /**logo**/
 
+    /**nav**/
 nav {    
     display: flex;
     align-self: flex-end;
@@ -40,7 +44,6 @@ nav {
 
 nav ul {
     list-style: none;
-    
 }
 
 nav li {
@@ -55,7 +58,10 @@ nav li a {
 
 nav li a:hover {
     color: rgb(103, 103, 230);
+    border-bottom: 2px solid  rgb(103, 103, 230);
 }
+    /**nav**/
+
 /**header**/
 
 hr {
@@ -66,6 +72,9 @@ hr {
 #banner img {
     height: 430px;
     width: 900px;
+    border-radius: 5px;
+    box-shadow: 0 4px 4px #1c1a19;
+    margin-bottom: 10px;
 }
 
 .container {
@@ -122,11 +131,14 @@ span {
 
 section {
     display: flex;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 
     /**article**/
 article {
     width: 180%;
+    margin-right: 20px;
 }
 
 article img {
@@ -159,8 +171,12 @@ aside h1 {
     text-align: center;
 }
 
-aside img {
+.autor_pics {
     height: 100px;
+    border: 1px solid #181818;
+    text-align: center;
+}  
+aside img {
     margin-left: 18%;
 }
 
@@ -172,7 +188,7 @@ aside ul {
 }
 
 aside p {
-    padding: 0 5px 0 5px;
+    padding: 0 8px 0 8px;
 }
 
 aside li {
@@ -189,7 +205,7 @@ aside li img {
 .bulle img {
     height: 20px;
     position: absolute;
-    right: 290px;
+    right: 410px;
     top: 700px;
 }
 

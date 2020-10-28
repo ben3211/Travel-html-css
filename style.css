@@ -4,6 +4,50 @@ body {
     background-image: url("img/background.jpg");
 }
 
+@media screen and (max-width:1024px) {
+    body {
+        width: auto;
+    }
+
+    nav {
+        width:auto:
+    }
+
+    nav li a:hover {
+        border-bottom: none;
+    }
+
+    #banner {
+        display: none;
+    }
+
+    footer {
+        width: auto;
+    }
+
+    section p {
+        margin: 0 0 0 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    section {
+        flex-direction: column;
+    }
+
+    article, aside {
+        width: 90%;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+
+    aside img {
+        float: right;
+        margin-left: 3%;
+    } 
+}
+
+
 /**header**/
 
     /**logo**/
@@ -34,7 +78,6 @@ header {
 
     /**nav**/
 nav {    
-    display: flex;
     align-self: flex-end;
     margin-left: auto;
     margin-right: 15px;
@@ -56,7 +99,7 @@ nav li a {
     color: rgb(0, 0, 0);
 }
 
-nav li a:hover {
+nav a:hover {
     color: rgb(103, 103, 230);
     border-bottom: 2px solid  rgb(103, 103, 230);
 }
@@ -137,7 +180,6 @@ section {
 
     /**article**/
 article {
-    width: 180%;
     margin-right: 20px;
 }
 
@@ -161,7 +203,6 @@ article h1 {
 
     /**aside**/
 aside {
-    width: 70%;
     color: rgb(218, 228, 238);
     background-color: rgb(112, 107, 100);
     border-radius: 10px;
@@ -171,20 +212,19 @@ aside h1 {
     text-align: center;
 }
 
-.autor_pics {
-    height: 100px;
-    border: 1px solid #181818;
+#autor_pics {
     text-align: center;
 }  
-aside img {
-    margin-left: 18%;
+
+#autor_pics img {
+    height: 100px;
+    border: 1px solid #181818;
 }
 
 aside ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     padding: 0% 10% 0% 5%;
-
 }
 
 aside p {
@@ -193,6 +233,7 @@ aside p {
 
 aside li {
     list-style: none;
+    margin-right: 5px;
 }
 
 aside li img {
